@@ -36,7 +36,7 @@ I listed files and folders in my Ubuntu environment and confirmed the current wo
 
 ### 2. View Hidden Files and Folders
 
-I used the `ls -la` flag to reveal hidden files and folders (those prefixed with `.`) that are not visible with a standard `ls` command.
+I used the `ls -a` flag to reveal hidden files and folders (those prefixed with `.`) that are not visible with a standard `ls` command.
 
 ![View hidden files](screenshots/02-hidden-files.png)
 
