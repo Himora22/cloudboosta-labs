@@ -86,7 +86,9 @@ I used the `df` command to check disk space usage across mounted filesystems.
 
 ### 8. Monitor System Performance
 
-I used the `top` command to view live system performance including CPU and memory usage by running processes.
+I used the `vmstat` command to report on virtual memory usage, CPU activity, 
+I/O statistics and system interrupts — giving an overall picture of how the 
+system was performing at a low level.
 
 ![System performance](screenshots/09-system-performance.png)
 
@@ -138,14 +140,21 @@ mv my_name.txt Names/
 
 ### 4. Save Command Output to a File
 
-I saved the output of the `free` command into a file named `system.txt` using output redirection, then appended the results of `lscpu` to the same file.
+I saved the output of the `free` command into a file named `system.txt` using output redirection.
 
 ```bash
 free > system.txt
+```
+
+![Save free output to system.txt](screenshots/14-system-txt.png)
+
+I then appended the results of `lscpu` to the same file.
+
+```bash
 lscpu >> system.txt
 ```
 
-![Save free and lscpu output](screenshots/14-system-txt.png)
+![Append lscpu output to system.txt](screenshots/14b-lscpu-append.png)
 
 ---
 
@@ -195,8 +204,7 @@ file sample5.txt
 | `df -h` | Check disk space usage (human readable) |
 | `free -m` | Check available memory in megabytes |
 | `lscpu` | Display CPU architecture information |
-| `top` | Live system performance monitor |
-
+| `vmstat` | Report virtual memory, CPU, I/O and system interrupt statistics |
 ---
 
 ## What I Learned
